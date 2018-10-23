@@ -1,0 +1,8 @@
+(define (max2sum x y z)
+  (cond  ((and (>= x y) (>= y z) ) (+ x y) )
+         ((and (>= x y) (>= z y ) ) (+ x z) ) 
+          ((and (>= y x) (>= x z ) ) (+ y x) ) 
+            ((and (>= y x) (>= z x ) ) (+ y z) ) 
+              ((and (>= z y) (>= y x ) ) (+ z y) ) 
+                ((and (>= z x) (>= x y ) ) (+ z x) ) 
+))
